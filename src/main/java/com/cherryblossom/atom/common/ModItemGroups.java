@@ -1,8 +1,8 @@
-package com.lset.atom.common;
+package com.cherryblossom.atom.common;
 
-import com.lset.atom.Atom;
-import com.lset.atom.common.blocks.ModBlocks;
-import com.lset.atom.common.items.ModItems;
+import com.cherryblossom.atom.Atom;
+import com.cherryblossom.atom.common.blocks.ModBlocks;
+import com.cherryblossom.atom.common.items.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;

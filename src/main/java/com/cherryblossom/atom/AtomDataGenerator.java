@@ -1,4 +1,4 @@
-package com.lset.atom;
+package com.cherryblossom.atom;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

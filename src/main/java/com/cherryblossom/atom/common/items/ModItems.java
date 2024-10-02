@@ -1,6 +1,6 @@
-package com.lset.atom.common.items;
+package com.cherryblossom.atom.common.items;
 
-import com.lset.atom.Atom;
+import com.cherryblossom.atom.Atom;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;

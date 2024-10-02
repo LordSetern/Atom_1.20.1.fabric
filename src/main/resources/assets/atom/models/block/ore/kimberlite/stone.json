@@ -1,8 +1,10 @@
 {
-  "parent": "atom:block/main/ore",
+  "parent": "atom:block/main/oreupdo",
   "textures": {
     "all": "minecraft:block/stone",
     "particle": "minecraft:block/stone",
-    "overlay": "atom:block/ore/kimberlite"
+    "overlay": "atom:block/ore/kimberlite",
+    "overlayup": "minecraft:block/stone",
+    "overlaydown": "minecraft:block/stone"
   }
 }

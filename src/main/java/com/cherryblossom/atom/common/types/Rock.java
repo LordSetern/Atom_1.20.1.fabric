@@ -4,7 +4,7 @@
  * https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
  */
 
-package com.lset.atom.common.types;
+package com.cherryblossom.atom.common.types;
 
 //Спиздил с TFC Я Гений
 public enum Rock

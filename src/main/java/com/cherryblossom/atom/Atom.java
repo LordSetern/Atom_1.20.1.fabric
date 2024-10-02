@@ -1,8 +1,8 @@
-package com.lset.atom;
+package com.cherryblossom.atom;
 
-import com.lset.atom.common.ModItemGroups;
-import com.lset.atom.common.blocks.ModBlocks;
-import com.lset.atom.common.items.ModItems;
+import com.cherryblossom.atom.common.ModItemGroups;
+import com.cherryblossom.atom.common.blocks.ModBlocks;
+import com.cherryblossom.atom.common.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;

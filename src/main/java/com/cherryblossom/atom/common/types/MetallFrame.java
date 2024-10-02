@@ -1,4 +1,4 @@
-package com.lset.atom.common.types;
+package com.cherryblossom.atom.common.types;
 
 public enum MetallFrame {
     //Каркас

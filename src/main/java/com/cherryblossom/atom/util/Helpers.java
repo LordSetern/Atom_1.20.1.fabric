@@ -1,4 +1,4 @@
-package com.lset.atom.util;
+package com.cherryblossom.atom.util;
 
 import java.util.Arrays;
 import java.util.EnumMap;

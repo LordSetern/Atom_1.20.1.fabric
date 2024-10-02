@@ -1,6 +1,6 @@
-package com.lset.atom.client;
+package com.cherryblossom.atom.client;
 
-import com.lset.atom.common.blocks.ModBlocks;
+import com.cherryblossom.atom.common.blocks.ModBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;

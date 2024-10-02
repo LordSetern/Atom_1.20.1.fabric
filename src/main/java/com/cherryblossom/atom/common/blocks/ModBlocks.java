@@ -1,8 +1,8 @@
-package com.lset.atom.common.blocks;
+package com.cherryblossom.atom.common.blocks;
 
-import com.lset.atom.Atom;
-import com.lset.atom.common.types.*;
-import com.lset.atom.util.Helpers;
+import com.cherryblossom.atom.Atom;
+import com.cherryblossom.atom.common.types.*;
+import com.cherryblossom.atom.util.Helpers;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
