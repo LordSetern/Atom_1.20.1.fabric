@@ -14,12 +14,12 @@ repositories {
 	mavenCentral()
 
 	maven {
-		url = "https://mvnrepository.com/artifact/software.bernie.geckolib/geckolib-fabric-1.20.1"
-
-	}
-	maven {
-		url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
-
+		name = 'GeckoLib'
+		url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+		content {
+			includeGroupByRegex("software\\.bernie.*")
+			includeGroup("com.eliotlash.mclib")
+		}
 	}
 	mavenLocal()
 	flatDir {
@@ -43,7 +43,8 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation "software.bernie.geckolib:geckolib-fabric-1.20.1:4.4.9"
+	modImplementation("software.bernie.geckolib:geckolib-fabric-1.20.1:4.4.9")
+	implementation("com.eliotlash.mclib:mclib:20")
 
 }
 
