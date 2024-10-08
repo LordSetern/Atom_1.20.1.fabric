@@ -3,16 +3,21 @@ package com.lset.atom.common.blocks;
 import com.lset.atom.Atom;
 import com.lset.atom.common.types.*;
 import com.lset.atom.util.Helpers;
+import com.mojang.authlib.GameProfile;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.LadderBlock;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import software.bernie.geckolib.animatable.GeoEntity;
 
 import java.util.Map;
 
@@ -42,7 +47,6 @@ public class ModBlocks {
                             registerBlock(("metal/" + type.name() + "/" + material.name()),
                                     new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
                                             .nonOpaque()))));
-
 
     //Helpers
     //Модель регистрации переменные->блок//
