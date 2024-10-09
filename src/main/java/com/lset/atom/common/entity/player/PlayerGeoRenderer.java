@@ -15,7 +15,7 @@ public class PlayerGeoRenderer extends GeoEntityRenderer<CustomEntityTest> {
 
     @Override
     public Identifier getTextureLocation(CustomEntityTest animatable) {
-        return new Identifier(Atom.MOD_ID,"textures/entity/player_gecko.png");
+        return new Identifier("atom","textures/entity/player_gecko.png");
     }
 
     @Override

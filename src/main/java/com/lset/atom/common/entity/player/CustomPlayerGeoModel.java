@@ -17,12 +17,12 @@ public class CustomPlayerGeoModel extends GeoModel<CustomEntityTest> {
 
     @Override
     public Identifier getTextureResource(CustomEntityTest animatable) {
-        return new Identifier("atom", "entity/player_gecko.png"); // Путь к вашей текстуре
+        return new Identifier("atom", "textures/entity/player_gecko.png"); // Путь к вашей текстуре
     }
 
     @Override
     public Identifier getAnimationResource(CustomEntityTest animatable) {
-        return new Identifier("atom", "animations/player_move_animation.json"); // Путь к анимациям
+        return new Identifier("atom", "animations/player.move.animation.json"); // Путь к анимациям
     }
 
     @Override

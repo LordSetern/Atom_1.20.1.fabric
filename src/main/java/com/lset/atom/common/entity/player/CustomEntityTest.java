@@ -31,7 +31,7 @@ public class CustomEntityTest extends AnimalEntity implements GeoEntity {
                 .add(EntityAttributes.GENERIC_MAX_HEALTH,16.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,4.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED,2.0f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED,0.4f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED,0.25f);
 
     }
 
@@ -63,9 +63,9 @@ public class CustomEntityTest extends AnimalEntity implements GeoEntity {
         if(customEntityTestAnimationState.isMoving()){
             customEntityTestAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.move.new",Animation.LoopType.LOOP));
         }
-
-        //customEntityTestAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.move.new",Animation.LoopType.LOOP));
-
+        else {
+            customEntityTestAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.idle", Animation.LoopType.LOOP));
+        }
         return PlayState.CONTINUE;
     }
 
