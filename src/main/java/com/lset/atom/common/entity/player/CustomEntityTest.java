@@ -25,16 +25,16 @@ public class CustomEntityTest extends AnimalEntity implements GeoEntity {
     protected CustomEntityTest(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
-
+    //Атрибуты существа
     public static DefaultAttributeContainer.Builder setAttributes(){
         return AnimalEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH,16.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,4.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED,2.0f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED,0.25f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED,0.1f);
 
     }
-
+    //Таргеты на что-либо , чем меньше тем выше приоритет
     @Override
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this));
@@ -47,18 +47,18 @@ public class CustomEntityTest extends AnimalEntity implements GeoEntity {
         this.goalSelector.add(2, new ActiveTargetGoal<>(this, MerchantEntity.class,true));
         this.goalSelector.add(3, new ActiveTargetGoal<>(this, ChickenEntity.class,true));
     }
-
+    //принимает в себя ModEntity
     @Nullable
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
         return ModEntity.NOPLAYER.create(world);
     }
-
+    //регистрация контроллера
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
         controllers.add(new AnimationController<>(this,"controller",0,this::predicate));
     }
-
+    //Применение анимаций
     private PlayState predicate(AnimationState<CustomEntityTest> customEntityTestAnimationState) {
         if(customEntityTestAnimationState.isMoving()){
             customEntityTestAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.move.new",Animation.LoopType.LOOP));
@@ -68,7 +68,7 @@ public class CustomEntityTest extends AnimalEntity implements GeoEntity {
         }
         return PlayState.CONTINUE;
     }
-
+    //возвращает анимации
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;
