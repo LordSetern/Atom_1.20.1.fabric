@@ -1,9 +1,9 @@
-package com.lset.atom.common.entity.mobs;
+package com.lset.atom.common.entity.tiger;
 
+import com.lset.atom.common.entity.ModEntities;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
-import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.ChickenEntity;
 import net.minecraft.entity.passive.MerchantEntity;
@@ -19,19 +19,20 @@ import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInst
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 
-public class TigerEntity extends AnimalEntity implements GeoEntity {
+
+public class TigerAttributes extends AnimalEntity implements GeoEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
-    public TigerEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    public TigerAttributes(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return AnimalEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 16.0D)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 4.0f)
-                .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.4f);
+                .add(net.minecraft.entity.attribute.EntityAttributes.GENERIC_MAX_HEALTH, 16.0D)
+                .add(net.minecraft.entity.attribute.EntityAttributes.GENERIC_ATTACK_DAMAGE, 4.0f)
+                .add(net.minecraft.entity.attribute.EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
+                .add(net.minecraft.entity.attribute.EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.4f);
     }
 
     @Override

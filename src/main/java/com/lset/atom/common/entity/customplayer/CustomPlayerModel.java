@@ -1,4 +1,4 @@
-package com.lset.atom.common.entity.player;
+package com.lset.atom.common.entity.customplayer;
 
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
@@ -8,25 +8,25 @@ import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.model.data.EntityModelData;
 
-public class CustomPlayerGeoModel extends GeoModel<CustomEntityTest> {
+public class CustomPlayerModel extends GeoModel<CustomPlayerAttributes> {
 
     @Override
-    public Identifier getModelResource(CustomEntityTest animatable) {
+    public Identifier getModelResource(CustomPlayerAttributes animatable) {
         return new Identifier("atom", "geo/player_gecko.geo.json"); // Путь к вашей модели
     }
 
     @Override
-    public Identifier getTextureResource(CustomEntityTest animatable) {
+    public Identifier getTextureResource(CustomPlayerAttributes animatable) {
         return new Identifier("atom", "textures/entity/player_gecko.png"); // Путь к вашей текстуре
     }
 
     @Override
-    public Identifier getAnimationResource(CustomEntityTest animatable) {
+    public Identifier getAnimationResource(CustomPlayerAttributes animatable) {
         return new Identifier("atom", "animations/player.move.animation.json"); // Путь к анимациям
     }
 
     @Override
-    public void setCustomAnimations(CustomEntityTest animatable, long instanceId, AnimationState<CustomEntityTest> animationState) {
+    public void setCustomAnimations(CustomPlayerAttributes animatable, long instanceId, AnimationState<CustomPlayerAttributes> animationState) {
         CoreGeoBone head = getAnimationProcessor().getBone("bonehead");
 
         if(head != null){

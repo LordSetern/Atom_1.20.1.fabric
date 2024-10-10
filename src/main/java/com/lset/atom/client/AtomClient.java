@@ -1,10 +1,9 @@
 package com.lset.atom.client;
 
 import com.lset.atom.common.blocks.ModBlocks;
-import com.lset.atom.common.entity.mobs.ModEntities;
-import com.lset.atom.common.entity.mobs.TigerRenderer;
-import com.lset.atom.common.entity.player.ModEntity;
-import com.lset.atom.common.entity.player.PlayerGeoRenderer;
+import com.lset.atom.common.entity.ModEntities;
+import com.lset.atom.common.entity.tiger.TigerRenderer;
+import com.lset.atom.common.entity.customplayer.CustomPlayerRenderer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
@@ -37,7 +36,7 @@ public class AtomClient implements ClientModInitializer {
     }
     public static void playerModelInitialize() {
 
-        EntityRendererRegistry.register(ModEntity.NOPLAYER, PlayerGeoRenderer::new);
         EntityRendererRegistry.register(ModEntities.TIGER, TigerRenderer::new);
+        EntityRendererRegistry.register(ModEntities.NOPLAYER, CustomPlayerRenderer::new);
     }
 }
