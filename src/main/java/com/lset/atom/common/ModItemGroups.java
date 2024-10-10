@@ -23,6 +23,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) ->
                             {
                                 entries.add(ModItems.TEST);
+                                entries.add(ModBlocks.BLOCK_STALIN);
                                 //Массовое добавление предметов с 2 регистрами
                                 ModBlocks.ORES.forEach((key, map) -> map.forEach((subkey, ores) -> entries.add(ores)));
                                 ModBlocks.CONSTRUCTIONE.forEach((key, map) -> map.forEach((subkey, ores) -> entries.add(ores)));
@@ -50,6 +51,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) ->
                     {
                         entries.add(ModItems.TEST);
+                        entries.add(ModItems.PLAYER_SPAWN_EGG);
                         //Массовое добавление предметов с 1 регистром
                         ModItems.ITEMSZERO.forEach((key, zero) -> entries.add(zero));
                     }
