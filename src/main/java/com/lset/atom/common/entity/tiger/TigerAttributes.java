@@ -63,8 +63,9 @@ public class TigerAttributes extends AnimalEntity implements GeoEntity {
         if(tAnimationState.isMoving()) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.tiger.walk", Animation.LoopType.LOOP));
         }
-
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.tiger.idle", Animation.LoopType.LOOP));
+        else {
+            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.tiger.idle", Animation.LoopType.LOOP));
+        }
         return PlayState.CONTINUE;
     }
 

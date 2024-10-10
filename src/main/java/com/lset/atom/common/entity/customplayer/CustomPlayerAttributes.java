@@ -64,8 +64,9 @@ public class CustomPlayerAttributes extends AnimalEntity implements GeoEntity {
         if(tAnimationState.isMoving()) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.move.new", Animation.LoopType.LOOP));
         }
-
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.idle", Animation.LoopType.LOOP));
+        else {
+            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.idle", Animation.LoopType.LOOP));
+        }
         return PlayState.CONTINUE;
     }
 
