@@ -21,7 +21,7 @@ public class Atom implements ModInitializer {
 	public void onInitialize() {
 		// Инициализация GeckoLib
 		GeckoLib.initialize();
-		//Регистрация предметов и вкладок
+		//Регистрация контента
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
@@ -31,5 +31,6 @@ public class Atom implements ModInitializer {
 		CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {
 			ModCommands.register(dispatcher);
 		}));
+		
 	}
 }
