@@ -30,6 +30,6 @@ public class ModEntities {
     //Helpers
     //Конец регистрации
     public static void registerModEntities(){
-        Atom.LOGGER.info("Registering mod entities for" + Atom.MOD_ID);
+        Atom.LOGGER.info("Registering mod entities for " + Atom.MOD_ID);
     }
 }

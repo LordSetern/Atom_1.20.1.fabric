@@ -68,6 +68,6 @@ public class ModItemGroups {
 
     //Конец регистрации
     public static void registerItemGroups(){
-        Atom.LOGGER.info("Registering item groups for" + Atom.MOD_ID);
+        Atom.LOGGER.info("Registering mod creative_tabs for " + Atom.MOD_ID);
     }
 }

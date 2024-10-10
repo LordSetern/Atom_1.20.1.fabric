@@ -1,5 +1,6 @@
 package com.lset.atom.common.entity.customplayer;
 
+import com.lset.atom.Atom;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.util.math.MatrixStack;
@@ -14,7 +15,7 @@ public class CustomPlayerRenderer extends GeoEntityRenderer<CustomPlayerAttribut
 
     @Override
     public Identifier getTextureLocation(CustomPlayerAttributes animatable) {
-        return new Identifier("atom","textures/entity/player_gecko.png");
+        return new Identifier(Atom.MOD_ID,"textures/entity/player_gecko.png");
     }
 
     @Override

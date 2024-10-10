@@ -1,5 +1,6 @@
 package com.lset.atom.common.entity.customplayer;
 
+import com.lset.atom.Atom;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import software.bernie.geckolib.constant.DataTickets;
@@ -12,17 +13,17 @@ public class CustomPlayerModel extends GeoModel<CustomPlayerAttributes> {
 
     @Override
     public Identifier getModelResource(CustomPlayerAttributes animatable) {
-        return new Identifier("atom", "geo/player_gecko.geo.json"); // Путь к вашей модели
+        return new Identifier(Atom.MOD_ID, "geo/player_gecko.geo.json"); // Путь к вашей модели
     }
 
     @Override
     public Identifier getTextureResource(CustomPlayerAttributes animatable) {
-        return new Identifier("atom", "textures/entity/player_gecko.png"); // Путь к вашей текстуре
+        return new Identifier(Atom.MOD_ID, "textures/entity/player_gecko.png"); // Путь к вашей текстуре
     }
 
     @Override
     public Identifier getAnimationResource(CustomPlayerAttributes animatable) {
-        return new Identifier("atom", "animations/player.move.animation.json"); // Путь к анимациям
+        return new Identifier(Atom.MOD_ID, "animations/player.move.animation.json"); // Путь к анимациям
     }
 
     @Override

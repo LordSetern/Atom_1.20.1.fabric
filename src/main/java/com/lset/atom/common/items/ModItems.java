@@ -32,6 +32,6 @@ public class ModItems {
     }
     //Конец регистрации
     public static void registerModItems(){
-        Atom.LOGGER.info("Registering mod items for" + Atom.MOD_ID);
+        Atom.LOGGER.info("Registering mod items for " + Atom.MOD_ID);
     }
 }

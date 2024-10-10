@@ -61,6 +61,6 @@ public class ModBlocks {
     }
     //Конец регистрации
     public static void registerModBlocks(){
-        Atom.LOGGER.info("Registering mod blocks for" + Atom.MOD_ID);
+        Atom.LOGGER.info("Registering mod blocks for " + Atom.MOD_ID);
     }
 }
