@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": true,
 	"textures": {
-		"1": "block/bamboo_small_leaves_top",
+		"1": "block/bamboo_small_leaves",
 		"texture": "block/bamboo_small_leaves",
 		"particle": "block/bamboo_small_leaves"
 	},
