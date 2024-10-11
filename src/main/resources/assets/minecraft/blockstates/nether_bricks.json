@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/netherbrick/nether_bricks" },
+			{ "model": "block/netherbrick/nether_bricks2" },
+			{ "model": "block/netherbrick/nether_bricks3" },
+			{ "model": "block/netherbrick/nether_bricks4" },
+			{ "model": "block/netherbrick/nether_bricks5" }
+        ]
+    }
+}

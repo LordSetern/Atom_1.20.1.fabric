@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/netherbrick/cracked_nether_bricks/top_bottom/5",
+    "side": "minecraft:block/netherbrick/cracked_nether_bricks/side/5"
+  }
+}
