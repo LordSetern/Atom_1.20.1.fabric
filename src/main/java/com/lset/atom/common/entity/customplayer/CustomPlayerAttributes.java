@@ -70,6 +70,7 @@ public class CustomPlayerAttributes extends AnimalEntity implements GeoEntity {
         return PlayState.CONTINUE;
     }
 
+
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;

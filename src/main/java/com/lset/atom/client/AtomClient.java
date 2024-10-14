@@ -1,6 +1,7 @@
 package com.lset.atom.client;
 
 import com.lset.atom.common.blocks.ModBlocks;
+import com.lset.atom.common.entity.LivingEntity.LivingRenderGeo;
 import com.lset.atom.common.entity.ModEntities;
 import com.lset.atom.common.entity.tiger.TigerRenderer;
 import com.lset.atom.common.entity.customplayer.CustomPlayerRenderer;
@@ -38,5 +39,6 @@ public class AtomClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.TIGER, TigerRenderer::new);
         EntityRendererRegistry.register(ModEntities.NOPLAYER, CustomPlayerRenderer::new);
+        EntityRendererRegistry.register(ModEntities.LIVINGPLAYER, LivingRenderGeo::new);
     }
 }

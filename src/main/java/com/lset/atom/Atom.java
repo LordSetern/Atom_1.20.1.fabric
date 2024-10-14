@@ -3,6 +3,7 @@ package com.lset.atom;
 import com.lset.atom.common.ModItemGroups;
 import com.lset.atom.common.blocks.ModBlocks;
 import com.lset.atom.common.command.ModCommands;
+import com.lset.atom.common.entity.LivingEntity.LivingPlayerGeo;
 import com.lset.atom.common.entity.ModEntities;
 import com.lset.atom.common.entity.customplayer.CustomPlayerAttributes;
 import com.lset.atom.common.entity.tiger.TigerAttributes;
@@ -32,6 +33,7 @@ public class Atom implements ModInitializer {
 		ModEntities.registerModEntities();
 		FabricDefaultAttributeRegistry.register(ModEntities.TIGER, TigerAttributes.setAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.NOPLAYER, CustomPlayerAttributes.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.LIVINGPLAYER, LivingPlayerGeo.setAttributes());
 	}
 	public static void registerModCommands() {
 		//Регистрация комманд
