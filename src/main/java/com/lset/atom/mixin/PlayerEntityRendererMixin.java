@@ -9,10 +9,15 @@ import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.PlayerEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.util.Hand;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import software.bernie.geckolib.core.animation.Animation;
+import software.bernie.geckolib.core.animation.RawAnimation;
 
 @Mixin(PlayerEntityRenderer.class)
 public abstract class PlayerEntityRendererMixin {
@@ -25,7 +30,6 @@ public abstract class PlayerEntityRendererMixin {
 
         // Создание сущности коровы в мире игрока
         CustomPlayerAttributes cow = new CustomPlayerAttributes(ModEntities.NOPLAYER, player.getWorld());
-
 
 
         // Синхронизация всех данных игрока с сущностью коровы
@@ -46,9 +50,14 @@ public abstract class PlayerEntityRendererMixin {
         //Поворот тела
         cow.prevBodyYaw = player.prevBodyYaw;
         cow.bodyYaw = player.bodyYaw;
-        //Управление анимациями
-
+        // Синхронизация позиции и скорости
+        cow.setPos(player.getX(), player.getY(), player.getZ());
+        cow.setVelocity(player.getVelocity());
+        // Синхронизация направления движения
+        cow.setYaw(player.getYaw());
+        cow.setPitch(player.getPitch());
     }
+
 
     // Метод для рендера коровы
     public void renderMorph(Entity entityToRender, MatrixStack matrixStack, float tickDelta, VertexConsumerProvider vertexConsumerProvider, int light) {
@@ -57,4 +66,5 @@ public abstract class PlayerEntityRendererMixin {
         entityRenderer.render(entityToRender, 0, tickDelta, matrixStack, vertexConsumerProvider, light);
         matrixStack.pop();
     }
+
 }
