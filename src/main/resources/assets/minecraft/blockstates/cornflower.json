@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/flower/cornflower" },
+			{ "model": "block/flower/cornflowerx3" }
+        ]
+    }
+}

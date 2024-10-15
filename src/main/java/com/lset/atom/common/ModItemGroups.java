@@ -65,6 +65,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) ->
                     {
                         entries.add(ModItems.TEST);
+                        ModItems.ITEMSMAGIC.forEach((key, zero) -> entries.add(zero));
                     }
                     ).build());
 

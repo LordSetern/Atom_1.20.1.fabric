@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/flower/orange_tulip" },
+			{ "model": "block/flower/orange_tulipx3" }
+        ]
+    }
+}
