@@ -1,0 +1,7 @@
+{
+  "parent": "atom:block/main/model_leaves",
+  "textures": {
+    "0": "block/leaves/acacia_leaves",
+    "particle": "block/leaves/acacia_leaves"
+  }
+}

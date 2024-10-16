@@ -1,0 +1,7 @@
+{
+  "parent": "atom:block/main/model_leaves",
+  "textures": {
+    "0": "block/leaves/birch_leaves",
+    "particle": "block/leaves/birch_leaves"
+  }
+}

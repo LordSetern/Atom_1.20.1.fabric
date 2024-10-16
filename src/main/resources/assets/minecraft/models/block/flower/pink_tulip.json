@@ -1,5 +1,5 @@
 {
-  "parent": "atom:block/main/flower_cubex1",
+  "parent": "atom:block/main/flower_grandx1",
 	"ambientocclusion": false,
 	"textures": {
 		"1": "block/flower/pink_tulip"

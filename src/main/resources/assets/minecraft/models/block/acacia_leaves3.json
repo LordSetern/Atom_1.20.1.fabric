@@ -1,8 +1,0 @@
-{
-  "parent": "block/model_leaves3",
-  "textures": {
-    "0": "block/acacia_leaves",
-    "particle": "block/acacia_leaves"
-
-  }
-}

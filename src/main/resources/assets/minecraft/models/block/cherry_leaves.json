@@ -1,8 +1,0 @@
-{
-  "parent": "block/model_leaves",
-  "textures": {
-    "0": "block/cherry_leaves",
-    "particle": "block/cherry_leaves"
-
-  }
-}

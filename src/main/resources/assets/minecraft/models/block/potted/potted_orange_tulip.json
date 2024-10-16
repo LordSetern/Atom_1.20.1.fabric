@@ -1,0 +1,6 @@
+{
+  "parent": "atom:block/main/flower_grandx_pot",
+  "textures": {
+    "1": "minecraft:block/flower/orange_tulip"
+  }
+}
