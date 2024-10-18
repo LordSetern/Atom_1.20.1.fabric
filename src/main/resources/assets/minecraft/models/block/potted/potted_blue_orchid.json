@@ -1,6 +1,0 @@
-{
-  "parent": "atom:block/main/flower_cubex_pot",
-  "textures": {
-    "1": "minecraft:block/flower/blue_orchid"
-  }
-}

@@ -2,83 +2,102 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"2": "atom:block/main/flover_stem",
-		"particle": "atom:block/main/flover_stem",
-		"b": "atom:block/main/flover_baze"
+		"2": "block/flower/red_tulip",
+		"particle": "block/flower/red_tulip"
 	},
 	"elements": [
 		{
 			"name": "flover",
-			"from": [6.6, 7.35, 6.45],
-			"to": [9.6, 12.35, 9.45],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8.07836, 7.68771, 7.95]},
+			"from": [6.6, 6.3, 6.45],
+			"to": [9.6, 11.3, 9.45],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8.1, 8.75, 7.95]},
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+				"north": {"uv": [13, 3, 16, 8], "texture": "#2"},
+				"east": {"uv": [13, 3, 16, 8], "texture": "#2"},
+				"south": {"uv": [13, 3, 16, 8], "texture": "#2"},
+				"west": {"uv": [13, 3, 16, 8], "texture": "#2"},
+				"up": {"uv": [13, 0, 16, 3], "texture": "#2"},
+				"down": {"uv": [10, 0, 13, 3], "texture": "#2"}
 			}
 		},
 		{
 			"name": "flover_leves5",
-			"from": [6.07836, -0.46638, 7.99027],
-			"to": [10.07836, 7.53362, 7.99027],
-			"rotation": {"angle": 0, "axis": "x", "origin": [9.07836, -0.31229, 7.05]},
+			"from": [5.17836, 0.03362, 5.49027],
+			"to": [13.17836, 8.03362, 5.49027],
+			"rotation": {"angle": -45, "axis": "y", "origin": [5.67836, 3.13362, 5.49027]},
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#2"},
-				"south": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#2"}
+				"north": {"uv": [0, 0, 7.75, 8], "texture": "#2"},
+				"south": {"uv": [0, 0, 7.75, 8], "texture": "#2"}
+			}
+		},
+		{
+			"name": "flover_leves5",
+			"from": [10.67836, 0.03362, 4.99027],
+			"to": [10.67836, 8.03362, 12.99027],
+			"rotation": {"angle": -45, "axis": "y", "origin": [10.67836, 3.13362, 5.49027]},
+			"faces": {
+				"east": {"uv": [0, 0, 7.75, 8], "texture": "#2"},
+				"west": {"uv": [0, 0, 7.75, 8], "texture": "#2"}
+			}
+		},
+		{
+			"name": "flover_leves5",
+			"from": [7.67836, 0.03362, 7.99027],
+			"to": [8.67836, 6.23362, 7.99027],
+			"rotation": {"angle": 0, "axis": "x", "origin": [10.67836, 0.18771, 7.05]},
+			"faces": {
+				"north": {"uv": [3.5, 2, 4.5, 7.5], "texture": "#2"},
+				"south": {"uv": [3.5, 2, 4.5, 7.5], "texture": "#2"}
 			}
 		},
 		{
 			"name": "flover_leves6",
-			"from": [7.87836, -0.46638, 5.89027],
-			"to": [7.87836, 7.53362, 9.89027],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.87836, 4.53362, 6.39027]},
+			"from": [8.17836, 0.03362, 8.49027],
+			"to": [8.17836, 6.33362, 7.49027],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.17836, 5.03362, 7.99027]},
 			"faces": {
-				"east": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#2"},
-				"west": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#2"}
+				"east": {"uv": [3.5, 1.9, 4.5, 7.25], "texture": "#2"},
+				"west": {"uv": [3.5, 2, 4.5, 7.25], "texture": "#2"}
 			}
 		},
 		{
-			"name": "flover_leves1",
-			"from": [7.72427, 6.54744, 5.9],
-			"to": [10.72427, 6.54744, 9.9],
-			"rotation": {"angle": 22.5, "axis": "z", "origin": [7.67836, 7.48771, 8.95]},
+			"name": "flover_leves6",
+			"from": [9.6, 6.3, 5.8614],
+			"to": [6.6, 9.3, 5.8614],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8.1, 7.78379, 5.8614]},
 			"faces": {
-				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#b"},
-				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#b"}
+				"north": {"uv": [10, 5, 13, 8], "texture": "#2"},
+				"south": {"uv": [10, 5, 13, 8], "texture": "#2"}
 			}
 		},
 		{
-			"name": "flover_leves2",
-			"from": [5.53245, 6.14744, 6],
-			"to": [8.53245, 6.14744, 10],
-			"rotation": {"angle": -22.5, "axis": "z", "origin": [9.57836, 7.08771, 9.05]},
+			"name": "flover_leves6",
+			"from": [10.04291, 6.3, 9.5],
+			"to": [10.04291, 9.3, 6.5],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [10.04291, 7.51299, 8]},
 			"faces": {
-				"up": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#b"},
-				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#b"}
+				"east": {"uv": [10, 5, 13, 8], "texture": "#2"},
+				"west": {"uv": [10, 5, 13, 8], "texture": "#2"}
 			}
 		},
 		{
-			"name": "flover_leves3",
-			"from": [6.12836, 6.19744, 5.35409],
-			"to": [10.12836, 6.19744, 8.35409],
-			"rotation": {"angle": 22.5, "axis": "x", "origin": [9.12836, 7.13771, 9.2]},
+			"name": "flover_leves6",
+			"from": [5.90464, 6.3, 9.5],
+			"to": [5.90464, 9.3, 6.5],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [5.90464, 8.0794, 8]},
 			"faces": {
-				"up": {"uv": [16, 16, 0, 0], "rotation": 180, "texture": "#b"},
-				"down": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#b"}
+				"east": {"uv": [10, 5, 13, 8], "texture": "#2"},
+				"west": {"uv": [10, 5, 13, 8], "texture": "#2"}
 			}
 		},
 		{
-			"name": "flover_leves4",
-			"from": [6.17836, 6.64744, 7.59591],
-			"to": [10.17836, 6.64744, 10.59591],
-			"rotation": {"angle": -22.5, "axis": "x", "origin": [9.17836, 7.58771, 7.75]},
+			"name": "flover_leves6",
+			"from": [9.6, 6.29987, 10.10316],
+			"to": [6.6, 9.29987, 10.10316],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8.1, 7.79987, 10.10316]},
 			"faces": {
-				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#b"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#b"}
+				"north": {"uv": [10, 5, 13, 8], "texture": "#2"},
+				"south": {"uv": [10, 5, 13, 8], "texture": "#2"}
 			}
 		}
 	],
@@ -122,17 +141,23 @@
 			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [
+				0,
 				{
 					"name": "flover_leves6",
 					"origin": [7.87836, 4.53362, 7.99027],
 					"color": 0,
-					"children": [0, 1, 2]
-				},
-				{
-					"name": "flover_leves4",
-					"origin": [9.97836, 5.10195, 10.3],
-					"color": 0,
-					"children": [3, 4, 5, 6]
+					"children": [
+						1,
+						2,
+						3,
+						4,
+						{
+							"name": "flover_leves6",
+							"origin": [7.67836, 11.03362, 2.99027],
+							"color": 0,
+							"children": [5, 6, 7, 8]
+						}
+					]
 				}
 			]
 		}

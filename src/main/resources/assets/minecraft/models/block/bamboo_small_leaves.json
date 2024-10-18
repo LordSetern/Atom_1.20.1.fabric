@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "block/bamboo_small_leaves",
-		"texture": "block/bamboo_small_leaves"
+		"particle": "block/leaves/bamboo_small_leaves",
+		"texture": "block/leaves/bamboo_small_leaves"
 	},
 	"elements": [
 		{
